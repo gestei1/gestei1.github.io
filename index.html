@@ -12,18 +12,23 @@
             box-sizing: border-box; /* Include padding and border in element's width and height */
         }
 
-        /* Full viewport height and center content */
+        /* Full viewport height and center content horizontally, top-aligned vertically */
         body {
             display: flex;
             flex-direction: column; /* Stack elements vertically */
             justify-content: center; /* Center vertically */
-            align-items: center; /* Center horizontally */
-            height: 100vh; /* Make sure the body fills the entire height of the viewport */
+            align-items: center; /* Center content horizontally */
+            min-height: 50vh; /* Ensure content fills the height of the viewport */
             text-align: center; /* Center text horizontally */
-            background-color: #f5f5f5; /* Optional: Set a background color */
+            background-color: #e0f7e0; /* Light green background */
         }
 
-        /* Make the logo responsive and centered */
+        /* Add padding to the top to prevent sticking to the top of the page */
+        .content {
+            padding-top: 10px; /* Adjust padding to control space from the top */
+        }
+
+        /* Logo size */
         .logo {
             width: 250px; /* Adjust size of the logo */
             height: auto; /* Maintain aspect ratio */
@@ -70,17 +75,19 @@
     </style>
 </head>
 <body>
-    <!-- Add the logo image here -->
-    <img src="ISU Dept of Economics Red-Black.png" alt="Department of Economics Logo" class="logo">
+    <div class="content">
+        <!-- Add the logo image here -->
+        <img src="ISU Dept of Economics Red-Black.png" alt="Department of Economics Logo" class="logo">
 
-    <h1>Welcome to the 2025 ECON Competition!</h1>
-    <p class="small-text">Department of Economics, Illinois State University</p>
-    
-    <p>Click on the PDFs below to open them in a new tab:</p>
-    <ul>
-        <li><a href="ECON Competition Guidelines (HS) 2024-2025.pdf" target="_blank">View High School ECON Competition Guidelines</a></li>
-        <li><a href="ECON Competition Guidelines (College) 2024-2025.pdf" target="_blank">View College ECON Competition Guidelines</a></li>
-    </ul>
+        <h1>Welcome to the 2025 ECON Competition!</h1>
+        <p class="small-text">Department of Economics, Illinois State University</p>
+
+        <p>Click on the PDFs below to open them in a new tab:</p>
+        <ul>
+            <li><a href="ECON Competition Guidelines (HS) 2024-2025.pdf" target="_blank">View High School ECON Competition Guidelines</a></li>
+            <li><a href="ECON Competition Guidelines (College) 2024-2025.pdf" target="_blank">View College ECON Competition Guidelines</a></li>
+        </ul>
+    </div>
 </body>
 </html>
 
