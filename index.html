@@ -3,13 +3,39 @@
 <head>
     <title>Click here for more info about the ECON Competition with the ISU Dept of Economics</title>
     <style>
+        /* Center the body content */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Make sure the content is centered vertically */
+            text-align: center; /* Center the text */
+            margin: 0;
+        }
+
+        /* Logo size */
+        .logo {
+            width: 400px; /* Adjust size of the logo */
+            height: auto; /* Maintain aspect ratio */
+            margin-bottom: 20px; /* Space below the logo */
+        }
+
+        /* Smaller text style */
         .small-text {
             font-size: 0.9em; /* Slightly smaller font */
             color: gray; /* Optional: makes the text look softer */
         }
-        .logo {
-            width: 500px; /* Adjust size of the logo */
-            height: auto; /* Maintain aspect ratio */
+
+        /* Centered list styling */
+        ul {
+            list-style-type: disc; /* Keep the bullet points */
+            padding: 0;
+            text-align: left; /* Align the text inside the list to the left */
+            display: inline-block; /* Make the list behave like a block but stay inside the centered layout */
+        }
+
+        li {
+            margin: 10px 0; /* Add space between list items */
         }
     </style>
 </head>
@@ -20,10 +46,10 @@
     <h1>Welcome to the 2025 ECON Competition!</h1>
     <p class="small-text">Department of Economics, Illinois State University</p>
     
-    <p>Download one of the PDFs outlining the entry requirements below:</p>
+    <p>Click on the PDFs below to open them in a new tab:</p>
     <ul>
-        <li><a href="ECON Competition Guidelines (HS) 2024-2025.pdf" download>Click here for High School ECON Competition Guidelines</a></li>
-        <li><a href="ECON Competition Guidelines (College) 2024-2025.pdf" download>Click here for College ECON Competition Guidelines</a></li>
+        <li><a href="ECON Competition Guidelines (HS) 2024-2025.pdf" target="_blank">View High School ECON Competition Guidelines</a></li>
+        <li><a href="ECON Competition Guidelines (College) 2024-2025.pdf" target="_blank">View College ECON Competition Guidelines</a></li>
     </ul>
 </body>
 </html>
