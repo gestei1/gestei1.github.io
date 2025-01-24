@@ -6,16 +6,17 @@
         /* Center the body content */
         body {
             display: flex;
-            justify-content: center;
-            align-items: center;
+            flex-direction: column; /* Stack elements vertically */
+            justify-content: center; /* Center vertically */
+            align-items: center; /* Center horizontally */
             height: 100vh; /* Make sure the content is centered vertically */
-            text-align: center; /* Center the text */
             margin: 0;
+            text-align: center; /* Center the text */
         }
 
         /* Logo size */
         .logo {
-            width: 400px; /* Adjust size of the logo */
+            width: 300px; /* Adjust size of the logo */
             height: auto; /* Maintain aspect ratio */
             margin-bottom: 20px; /* Space below the logo */
         }
@@ -24,14 +25,14 @@
         .small-text {
             font-size: 0.9em; /* Slightly smaller font */
             color: gray; /* Optional: makes the text look softer */
+            margin-bottom: 20px; /* Space below the smaller text */
         }
 
-        /* Centered list styling */
+        /* List styling */
         ul {
             list-style-type: disc; /* Keep the bullet points */
             padding: 0;
             text-align: left; /* Align the text inside the list to the left */
-            display: inline-block; /* Make the list behave like a block but stay inside the centered layout */
         }
 
         li {
