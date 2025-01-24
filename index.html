@@ -1,26 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>ISU ECON Competition 2025 Info</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISU 2025 ECON Competition Info</title>
     <style>
-        /* Reset margins and padding for all elements */
+        /* Global reset: Remove margin and padding for all elements */
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box; /* Include padding and borders in the element's total width and height */
+            box-sizing: border-box; /* Include padding and border in element's width and height */
         }
 
-        /* Center the content vertically and horizontally */
+        /* Full viewport height and center content */
         body {
             display: flex;
             flex-direction: column; /* Stack elements vertically */
             justify-content: center; /* Center vertically */
             align-items: center; /* Center horizontally */
-            height: 100vh; /* Make sure the content takes the full height of the viewport */
-            text-align: center; /* Center the text */
+            height: 100vh; /* Make sure the body fills the entire height of the viewport */
+            text-align: center; /* Center text horizontally */
+            background-color: #f5f5f5; /* Optional: Set a background color */
         }
 
-        /* Logo size */
+        /* Make the logo responsive and centered */
         .logo {
             width: 250px; /* Adjust size of the logo */
             height: auto; /* Maintain aspect ratio */
@@ -45,6 +48,25 @@
         li {
             margin: 5px 0; /* Reduce space between list items */
         }
+
+        /* Make the page responsive on mobile devices */
+        @media (max-width: 600px) {
+            body {
+                padding: 10px; /* Add a small padding on mobile devices */
+            }
+
+            .logo {
+                width: 200px; /* Adjust logo size on small screens */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Adjust font size for small screens */
+            }
+
+            .small-text {
+                font-size: 0.8em; /* Adjust font size for small screens */
+            }
+        }
     </style>
 </head>
 <body>
@@ -61,5 +83,6 @@
     </ul>
 </body>
 </html>
+
 
 
